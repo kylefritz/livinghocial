@@ -1,0 +1,9 @@
+{
+  "name": "livinghocial",
+  "author": "Kyle Fritz <kyle.p.fritz@gmail.com>",
+  "version": "0.0.1",
+  "dependencies":{
+    "express":"2.2.0",
+    "redis":"0.6.7"
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>livinghocial</title>
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js" ></script>
+  <script>
+    $(function(){
+      $('form').submit(function(e){
+        var email=$('#subscribe_field').val();
+        $.post($('form').attr('action'),{email:email},function(){
+          $('.message').html("we've got you");
+          $('form').fadeOut();
+        });
+
+        e.preventDefault();
+      });
+    });
+  </script>
+</head>
+<body>
+
+<div id="splash">
+<div id="page">
+  <div id="content">
+    <div id="logo">
+      <h1>LivingHocial</h1>
+    </div>
+  
+    <div id="contentArea">
+    <h2 id="social-cloud">one day deals on hoes</h2>
+    <h3 id="splash-message">it's pretty simple</h3>
+
+    <div id="subscribe_container">
+      <form action="/get-hoed" method="post">
+        <div class="field">
+          <input id="subscribe_field" name="email" placeholder="sign up for the beta" type="text" />
+        </div>
+        <div id="subscribe_button">
+          <input id="submit_button" name="commit" type="submit" value="Sign up" />
+        </div>
+    </form>
+        <div class="message"></div>
+      <div id="twitter"><a target="_blank" href="https://twitter.com/intent/user?screen_name=livinghocial">follow @livinghocial</a></div>
+    </div>
+    <br /><br />
+  </div>
+  </div>
+</div>
+
+<div id="footer">
+© 2011 livinghocial, inc. all rights reserved.
+</div>
+
+</div>
+
+</body>
+</html>

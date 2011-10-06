@@ -1,5 +1,4 @@
 var express =  require('express');
-var datetime =  require('datetime');
 var redis =  require('redis');
 
 if (process.env.REDISTOGO_URL) {

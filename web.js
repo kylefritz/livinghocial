@@ -11,8 +11,13 @@ if (process.env.REDISTOGO_URL) {
 
 var app = express.createServer(express.logger());
 
-//form values
-app.use(express.bodyParser());
+app.configure(function(){
+  //form values
+  app.use(express.bodyParser());
+  app.use(express.static(__dirname + '/public'));
+});
+
+
 
 app.get('/',function(req,resp){
   resp.sendfile(__dirname + '/index.html');

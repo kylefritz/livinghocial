@@ -1,0 +1,10 @@
+html{
+  font-family: 'Poly', serif;
+}
+h1,#twitter{
+  font-family: 'Leckerli One', cursive;
+}
+#content{
+  width:250px;
+  margin:0 auto;
+}

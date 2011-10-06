@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>livinghocial</title>
+  <link href='http://fonts.googleapis.com/css?family=Leckerli+One|Poly' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/style.css" />
   <script src="http://code.jquery.com/jquery-1.6.4.min.js" ></script>
   <script>
     $(function(){
@@ -16,6 +19,7 @@
       });
     });
   </script>
+  
 </head>
 <body>
 
@@ -28,15 +32,15 @@
   
     <div id="contentArea">
     <h2 id="social-cloud">one day deals on hoes</h2>
-    <h3 id="splash-message">it's pretty simple</h3>
+    <h3 id="splash-message">get your hoe on</h3>
 
     <div id="subscribe_container">
       <form action="/get-hoed" method="post">
-        <div class="field">
+        <div class="clearfix">
           <input id="subscribe_field" name="email" placeholder="sign up for the beta" type="text" />
         </div>
-        <div id="subscribe_button">
-          <input id="submit_button" name="commit" type="submit" value="Sign up" />
+        <div class="actions">
+          <input class="btn primary" name="commit" type="submit" value="Sign up" />
         </div>
     </form>
         <div class="message"></div>
@@ -45,10 +49,6 @@
     <br /><br />
   </div>
   </div>
-</div>
-
-<div id="footer">
-© 2011 livinghocial, inc. all rights reserved.
 </div>
 
 </div>
